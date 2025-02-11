@@ -61,9 +61,81 @@ header h1 {
     transform: translateX(-100%); /* Start with slide effect */
     border-radius: 10px; /* Rounded corners for a classy look */
 }
+
+.slide-in.large {
+    grid-column: span 2;
+    height: auto;
+}
+
+.slide-in.medium {
+    grid-column: span 1;
+    height: auto;
+}
+
+.slide-in.small {
+    grid-column: span 1;
+    height: auto;
+}
+
+.slide-in.photo-box {
+    background: none; /* No background for photo boxes */
+    box-shadow: none; /* No shadow for photo boxes */
+}
+
 img {
     width: 100%;
     height: auto;
     border-radius: 10px; /* Match box corners */
     margin-bottom: 20px; /* Spacing below the image */
+}
+
+button {
+    background: #8d6b51; /* Warm brown color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+button:hover {
+    background: #a98267; /* Light brown color */
+}
+
+footer {
+    background: #8d6b51; /* Warm brown color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #f5ebda; /* Border for a clean look */
+}
+
+.footer-text {
+    font-size: 0.8em; /* Smaller font size */
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.image-box {
+    flex: 1 1 calc(33% - 20px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
